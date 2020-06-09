@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Destination">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/D_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:background="#aaa"
+                android:elevation="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#FCF7F7"
+                android:elevation="10dp"
+                android:paddingBottom="3dp">
+
+
+
+
+                <TextView
+                    android:id="@+id/locD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="9dp"
+
+                    android:text="Localisation"
+                    android:textColor="#EB0C81DA" />
+
+
+
+
+                <ImageView
+                    android:id="@+id/locDe"
+                    android:layout_width="46dp"
+                    android:layout_height="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/ic_place_black_24dp" />
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/NomD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:text="text"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/descD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="dd"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgD"
+                    android:layout_width="260dp"
+                    android:layout_height="230dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

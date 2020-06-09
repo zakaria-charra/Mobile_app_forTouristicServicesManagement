@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_activite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/A_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:background="#aaa"
+                android:elevation="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#FCF7F7"
+                android:elevation="10dp"
+                android:paddingBottom="3dp">
+
+                <ImageView
+                    android:id="@+id/btnemail"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="26dp"
+                    android:src="@drawable/ic_email_black_24dp"
+
+
+                    />
+
+                <ImageView
+                    android:id="@+id/tel_A"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginRight="52dp"
+                    android:layout_marginBottom="26dp"
+                    android:background="@drawable/ic_local_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/locAc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="Localisation"
+                    android:textColor="#3E4D99" />
+
+                <TextView
+                    android:id="@+id/telA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="41dp"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Contact"
+                    android:textColor="#3E4D99" />
+
+                <ImageView
+                    android:id="@+id/locA"
+                    android:layout_width="46dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="151dp"
+                    android:layout_marginRight="153dp"
+                    android:background="@drawable/ic_place_black_24dp" />
+
+                <TextView
+                    android:id="@+id/emailA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="9dp"
+                    android:text="Email"
+                    android:textAlignment="center"
+                    android:textColor="#3E4D99" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ANom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:text="text"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:paddingLeft="18dp"
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center"
+                    android:text="non spécifié"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/descA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="dd"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    tools:context=".Add_produit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter votre produit"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/bangers"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Nom">
+
+            <EditText
+                android:id="@+id/nomP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stylechamp2"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Quantite">
+            <EditText
+                android:id="@+id/Quan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stylechamp2"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Adresse">
+        <EditText
+            android:id="@+id/AdressP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stylechamp2"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Prix">
+        <EditText
+            android:id="@+id/prixP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stylechamp2"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Description">
+            <EditText
+                android:id="@+id/DescP"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="start|top"
+                android:background="@drawable/stylechamp2"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/images"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+            android:text="Image"
+            android:background="#097785"/>
+
+            <TextView
+                android:id="@+id/alert"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textColor="#030E16"
+                android:text="vous avez selectionné 0 images"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <ProgressBar
+                android:id="@+id/progress_horizontal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="11dp"
+                android:visibility="gone"
+                android:progressDrawable="@drawable/style_barp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveP"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/style_button"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            android:text="Enregistrer"
+            android:textColor="#0E0D0D" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#FFFDFD"
+    android:orientation="vertical"
+    tools:context=".profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#9ACCE0"
+        android:padding="20dp"
+        android:layout_height="130dp">
+        
+        <ImageView
+            android:id="@+id/imgProf"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/profil"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/fabname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User name"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imgProf"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-black"
+            />
+        <TextView
+            android:id="@+id/fabid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User id"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@id/fabname"
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@id/imgProf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_marginTop="-35dp"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="14dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#93CADD"
+        android:layout_height="115dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            
+            <ImageView
+                android:id="@+id/pr"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/produit"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/nbProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:textColor="#0E0D0D"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/produit"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Nom"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nomU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_black"
+                android:drawablePadding="10dp"
+                android:text="Nom"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Prenom"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PrenomU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_black"
+                android:drawablePadding="10dp"
+                android:text="Prenom"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Email"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:text="Email"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Tel"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_in_talk_black_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:text="Tel"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Adresse"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adresseU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_place_black_"
+                android:drawablePadding="10dp"
+                android:text="Adresse"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/updProfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/style_button"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            android:text="Modifier"
+            android:textColor="#0E0D0D" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

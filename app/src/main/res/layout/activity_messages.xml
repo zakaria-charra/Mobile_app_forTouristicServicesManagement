@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".messages">
+
+
+    <TextView
+        android:id="@+id/fabContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacter L'administrateur"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/bangers"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Email">
+        <EditText
+            android:id="@+id/mailA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stylechamp2"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Message">
+        <EditText
+            android:id="@+id/MessageA"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="start|top"
+            android:background="@drawable/stylechamp2"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendM"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/style_button"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:text="Envoyer"
+        android:textColor="#474444" />
+
+</LinearLayout>

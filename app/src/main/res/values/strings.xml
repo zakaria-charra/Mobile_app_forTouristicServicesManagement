@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EssaouiraApp</string>
+    <string name="produit">Vous avez ajouté 00 produits</string>
+    <string name="descText">Bonjour chers fabricants traditionnels, cette partie est pour vous, ici vous pouvez gérer vos produits. vous devez être intelligent lors de cette opération, donner tous les détails sur votre produit, de nombreuses images, une localisation exacte pour attirer l\'attention des touristes</string>
+</resources>

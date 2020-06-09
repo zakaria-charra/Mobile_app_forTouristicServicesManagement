@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "445011691463",
+    "firebase_url": "https://essaouiraapp.firebaseio.com",
+    "project_id": "essaouiraapp",
+    "storage_bucket": "essaouiraapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445011691463:android:10fd7da30d276827d97be2",
+        "android_client_info": {
+          "package_name": "com.example.essaouiraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445011691463-ta1ppgesi22e3aq5tusvtipbuf1h4k8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.essaouiraapp",
+            "certificate_hash": "2e8382e98cfe9191175e85361c021030340b5472"
+          }
+        },
+        {
+          "client_id": "445011691463-1hn32rshbi8djuhq2rje5emf3ps9lt2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0pgR_hO6PBSPffhgDIejKr9l86nzwAGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445011691463-1hn32rshbi8djuhq2rje5emf3ps9lt2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

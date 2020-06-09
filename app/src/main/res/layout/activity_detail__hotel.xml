@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Hotel">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/H_flipper"
+                android:layout_width="match_parent"
+                android:background="#aaa"
+                android:elevation="10dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#FCF7F7"
+                android:elevation="10dp"
+                android:paddingBottom="3dp">
+
+                <ImageView
+                    android:id="@+id/telH"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginEnd="59dp"
+                    android:layout_marginRight="59dp"
+                    android:layout_marginBottom="26dp"
+                    android:background="@drawable/ic_local_phone_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Localisation"
+                    android:textColor="#3E4D99" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Contact"
+                    android:textColor="#3E4D99" />
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="34dp"
+                    android:id="@+id/locH"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="151dp"
+                    android:layout_marginRight="153dp"
+                    android:layout_marginBottom="29dp"
+                    android:background="@drawable/ic_place_black_24dp" />
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/HNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="text"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_local_hotel_black_24dp"
+                    android:paddingLeft="18dp"
+                    />
+                <TextView
+                    android:id="@+id/nbChamb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:paddingLeft="18dp"
+                    android:src="@drawable/ic_monetization_on_black_24dp" />
+
+                <TextView
+                    android:id="@+id/prix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/descH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dd"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

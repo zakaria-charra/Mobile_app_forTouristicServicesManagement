@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.essaouiraapp">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Profil_Torist"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".Detail_produit" />
+        <activity android:name=".Detail_Destination" />
+        <activity android:name=".Detail_activite" />
+        <activity android:name=".Detail_Hotel" />
+        <activity android:name=".Detail_Restaurant" />
+        <activity android:name=".Liste_Produits" />
+        <activity android:name=".Liste_Activites" />
+        <activity android:name=".Liste_Destinations" />
+        <activity android:name=".Liste_Hotels" />
+        <activity android:name=".Liste_Restaurants" />
+        <activity android:name=".HomeTouriste" />
+        <activity android:name=".HomeFabricant" />
+        <activity android:name=".RegistrationFabricant"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        />
+        <activity android:name=".RegistrationTourist"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        />
+        <activity android:name=".FirstPage" />
+        <activity android:name=".Authentification"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

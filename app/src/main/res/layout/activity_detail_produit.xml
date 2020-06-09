@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_produit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/P_flipper"
+                android:layout_width="match_parent"
+                android:background="#aaa"
+                android:elevation="10dp"
+                android:layout_height="420dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-415dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#500F0F0F"
+                android:elevation="10dp"
+                android:paddingBottom="3dp">
+
+                <ImageView
+                    android:id="@+id/telP"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="@drawable/ic_callb" />
+
+
+                <ImageView
+                    android:id="@+id/messageP"
+                    android:layout_width="39dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="151dp"
+                    android:layout_marginRight="153dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ic_emailb" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginBottom="20dp"
+                android:background="#77696666"
+                android:elevation="10dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nom_prd"
+                    android:text="Name"
+                    android:textSize="34dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/bangers"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_mony"
+                    android:paddingLeft="18dp"
+                    />
+                <TextView
+                    android:id="@+id/prix_prd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/locPro"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    android:paddingLeft="18dp"
+                    />
+                <TextView
+                    android:id="@+id/adress_prd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_quan"
+                    android:paddingLeft="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quantite_prd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center"
+                    android:text="Quantité:"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Description"
+                android:textColor="#131212"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="cursive"
+
+                />
+            <TextView
+                android:id="@+id/desc_prd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dd"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
